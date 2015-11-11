@@ -1,5 +1,4 @@
 FROM java:8
-
 MAINTAINER Paulo Sigrist <paulo.sigrist@gmail.com>
 
 # Create the base folders
