@@ -6,10 +6,10 @@ RUN mkdir -p /data
 RUN mkdir -p /opt/wiremock
 
 # Download the wiremock standalone into /opt/wiremock folder
-ADD https://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.6.0/wiremock-standalone-2.6.0.jar /opt/wiremock/
+ADD https://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.6.0/wiremock-standalone-2.18.0.jar /opt/wiremock/
 
 # Set /data as workdir
 WORKDIR /data
 
 # Start the wiremock
-ENTRYPOINT ["java", "-jar", "/opt/wiremock/wiremock-standalone-2.6.0.jar"]
+ENTRYPOINT ["java", "-jar", "/opt/wiremock/wiremock-standalone-2.18.0.jar"]
